@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Trading Co. | Himalaya Specialists</title>
+    <title>Dev Trading Co. | Quality Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -11,151 +11,182 @@
         .brand-red { background-color: #C41E3A; }
         .text-brand-blue { color: #001F3F; }
         .text-brand-red { color: #C41E3A; }
-        .product-card:hover img { transform: scale(1.05); transition: 0.3s; }
+        .product-card { transition: transform 0.3s ease, shadow 0.3s ease; }
+        .product-card:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
 
-    <!-- Top Bar -->
-    <div class="brand-blue text-white py-2 px-4 flex flex-wrap justify-between text-sm">
-        <div><i class="fas fa-phone mr-2"></i> +91 79829 86165</div>
-        <div><i class="fas fa-envelope mr-2"></i> dguptaji9900@gmail.com</div>
+    <!-- Top Contact Bar -->
+    <div class="brand-blue text-white py-2 px-6 flex flex-wrap justify-between items-center text-sm">
+        <div class="flex space-x-4">
+            <span><i class="fas fa-phone mr-2"></i>+91 79829 86165</span>
+            <span class="hidden md:inline">|</span>
+            <span><i class="fas fa-envelope mr-2"></i>dguptaji9900@gmail.com</span>
+        </div>
+        <div class="hidden md:block italic text-gray-300">
+            "Your Trusted Partner in Quality Products"
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <!-- Header & Nav -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black italic text-brand-blue uppercase">
-                Dev <span class="text-brand-red underline">Trading</span> Co.
+            <div class="flex items-center">
+                <img src="1000131859.jpg" alt="Dev Trading Logo" class="h-12 mr-3">
+                <div class="leading-none">
+                    <span class="text-2xl font-black text-brand-blue italic uppercase block">Dev Trading</span>
+                    <span class="text-brand-red font-bold tracking-widest text-xs uppercase">Quality Specialists</span>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
-                <a href="#" class="hover:text-brand-red">Home</a>
-                <a href="#featured" class="hover:text-brand-red">Featured Products</a>
-                <a href="#categories" class="hover:text-brand-red">Brands</a>
-                <a href="#contact" class="hover:text-brand-red">Contact</a>
+            <div class="hidden md:flex space-x-8 font-bold text-gray-700 uppercase text-sm tracking-tighter">
+                <a href="#" class="hover:text-brand-red transition">Home</a>
+                <a href="#catalog" class="hover:text-brand-red transition">Our Catalog</a>
+                <a href="#contact" class="hover:text-brand-red transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-white border-b-4 border-brand-red overflow-hidden">
+    <!-- Hero / Featured Banner -->
+    <section class="bg-white border-b-8 border-brand-red">
         <div class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <h1 class="text-5xl font-extrabold text-brand-blue mb-4">
-                    Specialist in <span class="text-brand-red">Himalaya</span> <br>Baby & Skin Care
+            <div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-10">
+                <h1 class="text-5xl font-black text-brand-blue leading-tight mb-4">
+                    DEALS IN <span class="text-brand-red">HIMALAYA</span> <br>& QUALITY BRANDS
                 </h1>
-                <p class="text-gray-600 text-lg mb-6">"Quality Products, Trusted Deals, Strong Relations"</p>
-                <div class="flex gap-4">
-                    <a href="https://wa.me/917982986165" class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold flex items-center">
-                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Inquiry Now
+                <p class="text-gray-600 text-lg mb-8">
+                    We specialize in 100% authentic Baby Care, Skin Care, and Personal Care products from India's most trusted brands.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/917982986165" class="bg-green-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-green-700 transition flex items-center">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i> WHATSAPP INQUIRY
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2">
-                <!-- Using the main business card image as the hero visual -->
-                <img src="1000131859.jpg" class="rounded-xl shadow-xl border" alt="Dev Trading Co">
+                <img src="images/product1.jpg" alt="Himalaya Gift Pack" class="rounded-2xl shadow-2xl border-4 border-white">
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Featured Products Gallery -->
-    <section id="featured" class="py-16 bg-gray-100">
+    <!-- Product Catalog Grid -->
+    <section id="catalog" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-extrabold text-brand-blue text-center mb-2 uppercase">Our Top Selling Range</h2>
-            <p class="text-center text-gray-500 mb-12">Authorized Trading of Premium Himalaya Wellness Products</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Product 1: Gift Pack -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image1.jpg" alt="Himalaya Gift Pack" class="w-full h-48 object-contain p-4 bg-white">
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-gray-800">Happy Baby Gift Pack</h3>
-                        <p class="text-xs text-gray-500 mt-1 uppercase">Baby Care Essential</p>
-                    </div>
-                </div>
-
-                <!-- Product 2: Neem Face Wash -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image8.jpg" alt="Neem Face Wash" class="w-full h-48 object-contain p-4 bg-white">
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-gray-800">Purifying Neem Face Wash</h3>
-                        <p class="text-xs text-gray-500 mt-1 uppercase">Skin Care</p>
-                    </div>
-                </div>
-
-                <!-- Product 3: Turmeric Face Wash -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image7.jpg" alt="Turmeric Face Wash" class="w-full h-48 object-contain p-4 bg-white">
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-gray-800">Dark Spot Clearing Turmeric</h3>
-                        <p class="text-xs text-gray-500 mt-1 uppercase">New Launch</p>
-                    </div>
-                </div>
-
-                <!-- Product 4: Baby Powder -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image9.jpg" alt="Baby Powder" class="w-full h-48 object-contain p-4 bg-white">
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-gray-800">Himalaya Baby Powder</h3>
-                        <p class="text-xs text-gray-500 mt-1 uppercase">Fresh & Cool</p>
-                    </div>
-                </div>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-brand-blue mb-2">OUR PRODUCT RANGE</h2>
+                <div class="w-24 h-2 brand-red mx-auto"></div>
             </div>
 
-            <!-- Second Row -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <!-- Baby Shampoo -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image6.jpg" alt="Gentle Baby Shampoo" class="w-full h-64 object-contain p-4">
-                    <div class="p-4 text-center brand-blue text-white">
-                        <h3 class="font-bold">Gentle Baby Shampoo</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card (Baby Powder) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product10.jpg" alt="Baby Powder" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Himalaya Baby Powder</h3>
+                        <p class="text-sm text-gray-500">Cool & Fresh Skin</p>
                     </div>
                 </div>
-                <!-- Almond & Rose Soap -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image10.jpg" alt="Almond Soap" class="w-full h-64 object-contain p-4">
-                    <div class="p-4 text-center brand-blue text-white">
-                        <h3 class="font-bold">Almond & Rose Soap</h3>
+
+                <!-- Product Card (Neem Face Wash) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product9.jpg" alt="Neem Face Wash" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Purifying Neem Face Wash</h3>
+                        <p class="text-sm text-gray-500">Acne-Free Skin</p>
                     </div>
                 </div>
-                <!-- Baby Lotion -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg product-card border border-gray-200">
-                    <img src="image4.jpg" alt="Baby Lotion" class="w-full h-64 object-contain p-4">
-                    <div class="p-4 text-center brand-blue text-white">
-                        <h3 class="font-bold">Himalaya Baby Lotion</h3>
+
+                <!-- Product Card (Turmeric Face Wash) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product8.jpg" alt="Turmeric Face Wash" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Dark Spot Clearing Turmeric</h3>
+                        <p class="text-sm text-gray-500">Natural Glow</p>
+                    </div>
+                </div>
+
+                <!-- Product Card (Baby Shampoo) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product6.jpg" alt="Baby Shampoo" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Gentle Baby Shampoo</h3>
+                        <p class="text-sm text-gray-500">No Tears Formula</p>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product11.jpg" alt="Almond Soap" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Almond & Rose Soap</h3>
+                        <p class="text-sm text-gray-500">Deep Nourishment</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product3.jpg" alt="Baby Cream" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Himalaya Baby Cream</h3>
+                        <p class="text-sm text-gray-500">Soft & Gentle</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product4.jpg" alt="Baby Lotion" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Himalaya Baby Lotion</h3>
+                        <p class="text-sm text-gray-500">Nourishing Care</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden product-card">
+                    <img src="images/product2.jpg" alt="Baby Soap" class="w-full h-64 object-contain p-4">
+                    <div class="p-4 border-t border-gray-100 text-center">
+                        <h3 class="font-bold text-brand-blue">Gentle Baby Soap</h3>
+                        <p class="text-sm text-gray-500">Olive & Almond Oil</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Badges Section -->
-    <section class="brand-blue py-10">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-white">
-            <div><i class="fas fa-check-circle text-brand-red text-3xl mb-2"></i><br>Best Quality</div>
-            <div><i class="fas fa-handshake text-brand-red text-3xl mb-2"></i><br>Trusted Deals</div>
-            <div><i class="fas fa-tags text-brand-red text-3xl mb-2"></i><br>Best Prices</div>
-        </div>
-    </section>
-
-    <!-- Final Footer / Contact -->
-    <footer id="contact" class="bg-white py-12 border-t">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl font-bold text-brand-blue mb-4 uppercase">Contact Dev Trading Co. Today</h2>
-            <p class="text-gray-600 mb-8 max-w-lg mx-auto">Get exclusive wholesale deals on Himalaya, Mamaearth, Joy, Patanjali, and more.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-12 text-lg">
-                <a href="tel:+917982986165" class="text-brand-blue font-bold hover:text-brand-red">
-                    <i class="fas fa-phone-alt mr-2"></i> +91 79829 86165
-                </a>
-                <a href="mailto:dguptaji9900@gmail.com" class="text-brand-blue font-bold hover:text-brand-red">
-                    <i class="fas fa-envelope mr-2"></i> dguptaji9900@gmail.com
-                </a>
+    <!-- Footer / Contact -->
+    <footer id="contact" class="brand-blue py-16 text-white border-t-8 border-brand-red">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-black mb-4 uppercase italic">Dev Trading Co.</h2>
+                    <p class="text-gray-400 mb-8 max-w-md">"Quality Products, Trusted Deals, Strong Relations"</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 brand-red rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <span class="text-xl font-bold">+91 79829 86165</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 brand-red rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="text-xl font-bold">dguptaji9900@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl border border-white/20">
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-widest text-brand-red">Quick Inquiry</h3>
+                    <p class="text-sm text-gray-300 mb-6">Send us a message on WhatsApp for the latest wholesale price lists.</p>
+                    <a href="https://wa.me/917982986165" class="block w-full brand-red text-center py-4 rounded-lg font-black hover:opacity-90 transition">
+                        GET PRICE LIST
+                    </a>
+                </div>
             </div>
-            <div class="mt-12 text-sm text-gray-400">&copy; 2026 Dev Trading Co. | Quality Products, Strong Relations.</div>
+            <div class="mt-16 pt-8 border-t border-white/10 text-center text-sm text-gray-500">
+                &copy; 2026 Dev Trading Co. | All Brand Logos & Names are Trademarks of their respective owners.
+            </div>
         </div>
     </footer>
 
-    <!-- Mobile Floating WhatsApp -->
+    <!-- Floating WhatsApp for Mobile -->
     <a href="https://wa.me/917982986165" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 md:hidden">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
