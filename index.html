@@ -20,13 +20,11 @@
     <!-- Header / Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Business Identity -->
             <div class="flex flex-col">
                 <span class="text-2xl font-black text-brand-blue italic uppercase leading-none">Dev Trading Co.</span>
                 <span class="text-[10px] font-bold text-brand-red tracking-[0.2em] uppercase mt-1">Authentic Product Hub</span>
             </div>
 
-            <!-- Action Buttons in Header -->
             <div class="flex items-center space-x-3">
                 <a href="https://wa.me/917982986165" class="bg-green-600 text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center hover:bg-green-700 transition">
                     <i class="fab fa-whatsapp mr-2"></i> WhatsApp
@@ -38,11 +36,11 @@
         </div>
     </nav>
 
-    <!-- Catchy Tagline Section (Replacing Image Header) -->
+    <!-- Catchy Tagline -->
     <header class="bg-white py-16 border-b-4 border-brand-red">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-black text-brand-blue mb-4">
-                BIG BRANDS. <span class="text-brand-red">BETTER DEALS.</span>
+            <h1 class="text-4xl md:text-6xl font-black text-brand-blue mb-4 uppercase">
+                Big Brands. <span class="text-brand-red">Better Deals.</span>
             </h1>
             <p class="text-xl md:text-2xl text-gray-600 font-medium italic">
                 "Connecting Quality with Trust, One Delivery at a Time."
@@ -50,95 +48,103 @@
         </div>
     </header>
 
-    <!-- Motto Section -->
+    <!-- Motto Banner -->
     <section class="brand-blue py-10 text-white">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-around items-center text-center space-y-6 md:space-y-0">
-            <div class="max-w-xs">
-                <h3 class="text-brand-red font-black text-lg uppercase tracking-wider mb-2">Our Motto</h3>
-                <p class="text-sm italic">"Quality Products, Trusted Deals, Strong Relations"</p>
+            <div>
+                <h3 class="text-brand-red font-black text-lg uppercase mb-1">Our Motto</h3>
+                <p class="italic">"Quality Products, Trusted Deals, Strong Relations"</p>
             </div>
-            <div class="h-12 w-px bg-gray-600 hidden md:block"></div>
-            <div class="max-w-xs">
-                <h3 class="text-brand-red font-black text-lg uppercase tracking-wider mb-2">Our Promise</h3>
-                <p class="text-sm italic">100% Authentic Brands & Toxin-Free Care</p>
+            <div class="h-10 w-px bg-gray-600 hidden md:block"></div>
+            <div>
+                <h3 class="text-brand-red font-black text-lg uppercase mb-1">Our Promise</h3>
+                <p class="italic">100% Authentic Brands & Toxin-Free Care</p>
             </div>
         </div>
     </section>
 
-    <!-- Product Catalog (All Images Here) -->
-    <section id="catalog" class="py-20">
+    <!-- Product Section -->
+    <section id="catalog" class="py-16">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-black text-brand-blue mb-12 text-center uppercase tracking-tight">
-                Featured <span class="text-brand-red">Collections</span>
-            </h2>
-
+            <h2 class="text-3xl font-black text-brand-blue mb-12 text-center uppercase">Featured Collection</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Product 1: Gift Pack -->
+                <!-- Product Card Example -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
                     <img src="images/product1.jpg" alt="Himalaya Gift Pack" class="w-full h-72 object-contain p-6 bg-gray-50">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-brand-blue">Himalaya Happy Baby Gift Pack</h3>
-                        <p class="text-gray-500 text-sm mt-2">The complete essential kit for newborn care.</p>
+                        <p class="text-gray-500 text-sm mt-2">Essential newborn care kit.</p>
                     </div>
                 </div>
-
-                <!-- Product 2: Face Washes -->
+                <!-- Repeat for other products as needed -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
                     <img src="images/product9.jpg" alt="Neem Face Wash" class="w-full h-72 object-contain p-6 bg-gray-50">
                     <div class="p-6">
-                        <h3 class="font-bold text-xl text-brand-blue">Himalaya Purifying Neem</h3>
-                        <p class="text-gray-500 text-sm mt-2">India's #1 Face Wash brand for clear skin.</p>
+                        <h3 class="font-bold text-xl text-brand-blue">Purifying Neem Face Wash</h3>
+                        <p class="text-gray-500 text-sm mt-2">Clean, acne-free skin naturally.</p>
                     </div>
                 </div>
-
-                <!-- Product 3: Turmeric Glow -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
                     <img src="images/product8.jpg" alt="Turmeric Face Wash" class="w-full h-72 object-contain p-6 bg-gray-50">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-brand-blue">Dark Spot Clearing Turmeric</h3>
-                        <p class="text-gray-500 text-sm mt-2">Advanced organic care for natural radiance.</p>
-                    </div>
-                </div>
-
-                <!-- Additional Products Grid -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
-                    <img src="images/product6.jpg" alt="Baby Shampoo" class="w-full h-72 object-contain p-6 bg-gray-50">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-brand-blue">Gentle Baby Shampoo</h3>
-                        <p class="text-gray-400 text-xs mt-1 italic">Infused with Chickpea & Rice</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
-                    <img src="images/product11.jpg" alt="Almond Soap" class="w-full h-72 object-contain p-6 bg-gray-50">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-brand-blue">Almond & Rose Soap</h3>
-                        <p class="text-gray-400 text-xs mt-1 italic">Nourishes & Reveals Glow</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 product-card">
-                    <img src="images/product10.jpg" alt="Baby Powder" class="w-full h-72 object-contain p-6 bg-gray-50">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-brand-blue">Cooling Baby Powder</h3>
-                        <p class="text-gray-400 text-xs mt-1 italic">Effective Excessive Sweat Control</p>
+                        <p class="text-gray-500 text-sm mt-2">Organic radiance booster.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Simple Footer -->
-    <footer class="bg-gray-100 py-10 border-t">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-brand-blue font-bold">Dev Trading Co.</p>
-            <p class="text-sm text-gray-500 mt-1 uppercase tracking-widest">dguptaji9900@gmail.com</p>
-            <div class="mt-6 flex justify-center space-x-6">
-                 <a href="tel:+917982986165" class="text-brand-blue hover:text-brand-red"><i class="fas fa-phone-alt"></i></a>
-                 <a href="https://wa.me/917982986165" class="text-green-600 hover:opacity-80"><i class="fab fa-whatsapp"></i></a>
+    <!-- Detailed Inquiry & Product Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Column 1: Business Details -->
+                <div>
+                    <h4 class="text-brand-red font-black text-xl mb-6 uppercase">Dev Trading Co.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        A leading supplier of high-quality baby care, skin care, and personal hygiene products. We deal in globally recognized brands to ensure safety and quality for your family.
+                    </p>
+                    <div class="space-y-3 text-sm">
+                        <p><i class="fas fa-phone-alt mr-3 text-brand-red"></i> +91 79829 86165</p>
+                        <p><i class="fas fa-envelope mr-3 text-brand-red"></i> dguptaji9900@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product Categories -->
+                <div>
+                    <h4 class="text-white font-black text-xl mb-6 uppercase">Product Details</h4>
+                    <ul class="text-gray-400 text-sm space-y-3">
+                        <li><i class="fas fa-check mr-2 text-brand-red text-xs"></i> <strong>Himalaya:</strong> Full Baby & Skin Care Range</li>
+                        <li><i class="fas fa-check mr-2 text-brand-red text-xs"></i> <strong>Mamaearth:</strong> Toxin-Free Beauty & Personal Care</li>
+                        <li><i class="fas fa-check mr-2 text-brand-red text-xs"></i> <strong>Joy:</strong> Skin Fruits & Nourishing Lotions</li>
+                        <li><i class="fas fa-check mr-2 text-brand-red text-xs"></i> <strong>Patanjali:</strong> Ayurvedic & Herbal Wellness</li>
+                        <li><i class="fas fa-check mr-2 text-brand-red text-xs"></i> <strong>Deodorants:</strong> KS, Fogg, Denver, Park Avenue</li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Inquiry -->
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <h4 class="text-white font-black text-lg mb-4 uppercase">Direct Inquiry</h4>
+                    <p class="text-gray-400 text-xs mb-6 italic">Need wholesale rates or bulk order details? Connect with us instantly on WhatsApp.</p>
+                    <a href="https://wa.me/917982986165?text=I%20want%20to%20inquire%20about%20your%20products" class="block w-full bg-green-600 text-center py-3 rounded-lg font-bold hover:bg-green-700 transition uppercase text-sm tracking-widest">
+                        <i class="fab fa-whatsapp mr-2"></i> Send Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="border-t border-white/10 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Dev Trading Co. | Quality Products, Trusted Deals, Strong Relations.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Floating WhatsApp -->
+    <a href="https://wa.me/917982986165" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 md:hidden">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
 </body>
 </html>
