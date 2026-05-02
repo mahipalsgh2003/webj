@@ -11,31 +11,34 @@
         .brand-red { background-color: #C41E3A; }
         .text-brand-blue { color: #001F3F; }
         .text-brand-red { color: #C41E3A; }
+        .hover-red:hover { color: #C41E3A; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
 
+    <!-- Top Bar -->
     <div class="brand-blue text-white py-2 px-4 flex flex-wrap justify-between text-sm">
         <div><i class="fas fa-phone mr-2"></i> +91 79829 86165</div>
-        <div><i class="fas fa-envelope mr-2"></i> info.devtradingco@gmail.com</div>
+        <div><i class="fas fa-envelope mr-2"></i> dguptaji9900@gmail.com</div>
     </div>
 
+    <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black italic text-brand-blue">
-                DEV <span class="text-brand-red underline">TRADING</span> CO.
+            <div class="text-2xl font-black italic text-brand-blue uppercase">
+                Dev <span class="text-brand-red underline">Trading</span> Co.
             </div>
             <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
-                <a href="#" class="hover:text-brand-red transition">Home</a>
-                <a href="#categories" class="hover:text-brand-red transition">Categories</a>
-                <a href="#brands" class="hover:text-brand-red transition">Brands</a>
-                <a href="#contact" class="hover:text-brand-red transition">Contact</a>
+                <a href="#" class="hover-red transition">Home</a>
+                <a href="#categories" class="hover-red transition">Categories</a>
+                <a href="#contact" class="hover-red transition">Contact</a>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="relative bg-white overflow-hidden border-b-4 border-brand-red">
-        <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+        <div class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-5xl font-extrabold text-brand-blue mb-4 leading-tight">
                     Your Trusted Partner in <br> <span class="text-brand-red">Quality Products</span>
@@ -43,92 +46,84 @@
                 <p class="text-gray-600 text-lg mb-8 italic border-l-4 border-brand-red pl-4">
                     "Quality Products, Trusted Deals, Strong Relations"
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#contact" class="brand-blue text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition shadow-lg">Inquiry Now</a>
-                    <a href="#categories" class="border-2 border-brand-blue text-brand-blue px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Our Catalog</a>
+                <div class="flex flex-wrap gap-4">
+                    <!-- WhatsApp Inquiry Button -->
+                    <a href="https://wa.me/917982986165?text=Hello%20Dev%20Trading%20Co.,%20I%20am%20interested%20in%20your%20products." 
+                       class="bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition shadow-lg flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp Inquiry
+                    </a>
+                    <a href="tel:+917982986165" class="brand-blue text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition shadow-lg">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Now
+                    </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <div class="bg-gray-200 w-full h-64 rounded-lg flex items-center justify-center text-gray-400 italic">
-                    [Product Display: Himalaya, Mamaearth, Joy]
-                </div>
+                <img src="1000131859.jpg" alt="Dev Trading Co Products" class="rounded-lg shadow-2xl max-w-full h-auto border-4 border-gray-100">
             </div>
         </div>
     </header>
 
+    <!-- Category Grid -->
     <section id="categories" class="py-16 container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">What We Deal In</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-brand-blue text-center hover:shadow-md transition">
-                <div class="text-brand-red text-4xl mb-4"><i class="fas fa-baby"></i></div>
-                <h3 class="font-bold text-lg mb-2">Baby Care</h3>
-                <p class="text-sm text-gray-500">Himalaya Baby Care Range</p>
+        <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">Deals In & Brands</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Baby Care -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brand-blue hover:shadow-md transition">
+                <div class="text-brand-red text-3xl mb-4"><i class="fas fa-baby"></i></div>
+                <h3 class="font-bold text-xl mb-2">Baby Care</h3>
+                <p class="text-gray-600">All kinds of <strong>Himalaya</strong> Baby Care Products.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-brand-blue text-center hover:shadow-md transition">
-                <div class="text-brand-red text-4xl mb-4"><i class="fas fa-heartbeat"></i></div>
-                <h3 class="font-bold text-lg mb-2">Skin Care</h3>
-                <p class="text-sm text-gray-500">Joy, Mamaearth</p>
+            <!-- Skin Care -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brand-blue hover:shadow-md transition">
+                <div class="text-brand-red text-3xl mb-4"><i class="fas fa-sparkles"></i></div>
+                <h3 class="font-bold text-xl mb-2">Skin Care</h3>
+                <p class="text-gray-600">Key Brands like <strong>Joy, Mamaearth</strong>.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-brand-blue text-center hover:shadow-md transition">
-                <div class="text-brand-red text-4xl mb-4"><i class="fas fa-pump-soap"></i></div>
-                <h3 class="font-bold text-lg mb-2">Personal Care</h3>
-                <p class="text-sm text-gray-500">Patanjali, Himalaya</p>
+            <!-- Personal Care -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brand-blue hover:shadow-md transition">
+                <div class="text-brand-red text-3xl mb-4"><i class="fas fa-leaf"></i></div>
+                <h3 class="font-bold text-xl mb-2">Herbal & Personal Care</h3>
+                <p class="text-gray-600">Key Brands like <strong>Patanjali, Himalaya</strong>.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-brand-blue text-center hover:shadow-md transition">
-                <div class="text-brand-red text-4xl mb-4"><i class="fas fa-magic"></i></div>
-                <h3 class="font-bold text-lg mb-2">Cosmetics</h3>
-                <p class="text-sm text-gray-500">Garnier Range</p>
+            <!-- Deodorants -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brand-blue hover:shadow-md transition">
+                <div class="text-brand-red text-3xl mb-4"><i class="fas fa-wind"></i></div>
+                <h3 class="font-bold text-xl mb-2">Body Deodorants</h3>
+                <p class="text-gray-600"><strong>KS, Park Avenue, Fogg, Denver</strong>, etc.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-brand-blue text-center hover:shadow-md transition">
-                <div class="text-brand-red text-4xl mb-4"><i class="fas fa-spray-can"></i></div>
-                <h3 class="font-bold text-lg mb-2">Deodorants</h3>
-                <p class="text-sm text-gray-500">Fogg, Denver, Park Avenue</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="brand-blue py-12 text-white">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-                <i class="fas fa-award text-4xl text-brand-red mb-3"></i>
-                <h4 class="font-bold text-xl uppercase">Best Quality</h4>
-            </div>
-            <div>
-                <i class="fas fa-handshake text-4xl text-brand-red mb-3"></i>
-                <h4 class="font-bold text-xl uppercase">Trusted Deals</h4>
-            </div>
-            <div>
-                <i class="fas fa-shopping-cart text-4xl text-brand-red mb-3"></i>
-                <h4 class="font-bold text-xl uppercase">Best Prices</h4>
+            <!-- Cosmetics -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brand-blue hover:shadow-md transition">
+                <div class="text-brand-red text-3xl mb-4"><i class="fas fa-eye"></i></div>
+                <h3 class="font-bold text-xl mb-2">Cosmetic Products</h3>
+                <p class="text-gray-600">Key Brands like <strong>Garnier</strong>.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="bg-gray-50 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
-                <div class="brand-blue p-10 text-white md:w-1/3">
-                    <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
-                    <p class="mb-4 text-gray-300">Get in touch for bulk orders and price lists.</p>
-                    <div class="space-y-4">
-                        <p><i class="fas fa-phone mr-3 text-brand-red"></i> +91 79829 86165</p>
-                        <p><i class="fas fa-envelope mr-3 text-brand-red"></i> dguptaji9900@gmail.co</p>
-                    </div>
+    <!-- Floating WhatsApp Button for Mobile -->
+    <a href="https://wa.me/917982986165" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 md:hidden">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Footer / Contact Info -->
+    <footer id="contact" class="brand-blue text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4 uppercase">Dev Trading Co.</h2>
+            <p class="mb-6 text-gray-300 italic">"Quality Products, Trusted Deals, Strong Relations"</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 mb-8">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-brand-red mr-3"></i>
+                    <span>+91 79829 86165</span>
                 </div>
-                <form class="p-10 md:w-2/3 space-y-4">
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="Name" class="w-full border p-3 rounded focus:outline-brand-blue">
-                        <input type="text" placeholder="Phone" class="w-full border p-3 rounded focus:outline-brand-blue">
-                    </div>
-                    <textarea placeholder="Your Requirement" class="w-full border p-3 rounded h-32 focus:outline-brand-blue"></textarea>
-                    <button class="brand-red text-white font-bold w-full py-3 rounded hover:opacity-90 transition">Send Inquiry</button>
-                </form>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-brand-red mr-3"></i>
+                    <span>dguptaji9900@gmail.com</span>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-700 text-sm text-gray-400">
+                &copy; 2026 Dev Trading Co. | Designed for Quality.
             </div>
         </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm border-t border-gray-800">
-        <p>&copy; 2026 Dev Trading Co. All rights reserved.</p>
     </footer>
 
 </body>
